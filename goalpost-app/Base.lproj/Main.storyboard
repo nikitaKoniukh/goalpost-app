@@ -229,10 +229,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IZU-yn-iRP">
                                 <rect key="frame" x="20" y="120" width="374" height="260"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What is your goal?" translatesAutoresizingMaskIntoConstraints="NO" id="Jlg-X1-dXa">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What is your goal?" translatesAutoresizingMaskIntoConstraints="NO" id="1wU-AQ-7iY">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="170.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -274,9 +274,13 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="1wU-AQ-7iY" firstAttribute="top" secondItem="IZU-yn-iRP" secondAttribute="top" id="0O3-nO-iRR"/>
                                     <constraint firstAttribute="trailing" secondItem="FaS-eU-gJu" secondAttribute="trailing" id="4M5-5L-epI"/>
                                     <constraint firstItem="FaS-eU-gJu" firstAttribute="leading" secondItem="IZU-yn-iRP" secondAttribute="leading" id="DLK-TS-C1v"/>
+                                    <constraint firstItem="ZNC-bF-iJe" firstAttribute="top" secondItem="1wU-AQ-7iY" secondAttribute="bottom" constant="10" id="ToF-zV-Nxi"/>
                                     <constraint firstAttribute="height" constant="260" id="dEB-iI-dxK"/>
+                                    <constraint firstAttribute="trailing" secondItem="1wU-AQ-7iY" secondAttribute="trailing" id="f3O-JH-RVZ"/>
+                                    <constraint firstItem="1wU-AQ-7iY" firstAttribute="leading" secondItem="IZU-yn-iRP" secondAttribute="leading" id="keJ-ga-O7Z"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcT-lE-D7Y">
@@ -309,7 +313,6 @@
                         <viewLayoutGuide key="safeArea" id="JRz-lw-r23"/>
                     </view>
                     <connections>
-                        <outlet property="goalTextView" destination="Jlg-X1-dXa" id="xtP-6Z-oH6"/>
                         <outlet property="longTermButton" destination="Ag4-YB-kYN" id="0P2-8u-MpD"/>
                         <outlet property="nextButton" destination="RcT-lE-D7Y" id="NJl-0m-ycA"/>
                         <outlet property="shortTermButton" destination="H82-CS-FKB" id="o44-OR-CYg"/>
@@ -317,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4J5-ls-Xef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="21"/>
+            <point key="canvasLocation" x="853.62318840579712" y="20.758928571428569"/>
         </scene>
     </scenes>
     <resources>

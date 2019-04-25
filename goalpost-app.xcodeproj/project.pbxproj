@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */; };
 		CA22A0FE2271C21400D4C7E5 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */; };
+		CA22A1002271C76E00D4C7E5 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */; };
+		CA22A1022271CB0A00D4C7E5 /* UIExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A1012271CB0A00D4C7E5 /* UIExt.swift */; };
 		CA2770FA22716609004A0126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2770F922716609004A0126 /* AppDelegate.swift */; };
 		CA2770FC22716609004A0126 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2770FB22716609004A0126 /* GoalsVC.swift */; };
 		CA2770FF22716609004A0126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2770FD22716609004A0126 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		CA22A1012271CB0A00D4C7E5 /* UIExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExt.swift; sourceTree = "<group>"; };
 		CA2770F622716609004A0126 /* goalpost-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goalpost-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2770F922716609004A0126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA2770FB22716609004A0126 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */,
+				CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */,
+				CA22A1012271CB0A00D4C7E5 /* UIExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,7 +191,9 @@
 				CA2771152271AFB9004A0126 /* GoalCell.swift in Sources */,
 				CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */,
 				CA2771172271B856004A0126 /* GoalType.swift in Sources */,
+				CA22A1022271CB0A00D4C7E5 /* UIExt.swift in Sources */,
 				CA2770FC22716609004A0126 /* GoalsVC.swift in Sources */,
+				CA22A1002271C76E00D4C7E5 /* UIViewExt.swift in Sources */,
 				CA2770FA22716609004A0126 /* AppDelegate.swift in Sources */,
 				CA22A0FE2271C21400D4C7E5 /* UIViewControllerExt.swift in Sources */,
 				CA27710222716609004A0126 /* goalpost_app.xcdatamodeld in Sources */,

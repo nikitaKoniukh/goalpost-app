@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CA2770FA22716609004A0126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2770F922716609004A0126 /* AppDelegate.swift */; };
-		CA2770FC22716609004A0126 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2770FB22716609004A0126 /* ViewController.swift */; };
+		CA2770FC22716609004A0126 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2770FB22716609004A0126 /* GoalsVC.swift */; };
 		CA2770FF22716609004A0126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2770FD22716609004A0126 /* Main.storyboard */; };
 		CA27710222716609004A0126 /* goalpost_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA27710022716609004A0126 /* goalpost_app.xcdatamodeld */; };
 		CA2771042271660A004A0126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2771032271660A004A0126 /* Assets.xcassets */; };
 		CA2771072271660A004A0126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2771052271660A004A0126 /* LaunchScreen.storyboard */; };
+		CA2771152271AFB9004A0126 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2771142271AFB9004A0126 /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA2770F622716609004A0126 /* goalpost-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goalpost-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2770F922716609004A0126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA2770FB22716609004A0126 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA2770FB22716609004A0126 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		CA2770FE22716609004A0126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA27710122716609004A0126 /* goalpost_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = goalpost_app.xcdatamodel; sourceTree = "<group>"; };
 		CA2771032271660A004A0126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA2771062271660A004A0126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA2771082271660A004A0126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2771142271AFB9004A0126 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,7 @@
 		CA27710E22716859004A0126 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CA2770FB22716609004A0126 /* ViewController.swift */,
+				CA2770FB22716609004A0126 /* GoalsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -81,6 +83,7 @@
 		CA27710F2271686C004A0126 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA2771142271AFB9004A0126 /* GoalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2770FC22716609004A0126 /* ViewController.swift in Sources */,
+				CA2771152271AFB9004A0126 /* GoalCell.swift in Sources */,
+				CA2770FC22716609004A0126 /* GoalsVC.swift in Sources */,
 				CA2770FA22716609004A0126 /* AppDelegate.swift in Sources */,
 				CA27710222716609004A0126 /* goalpost_app.xcdatamodeld in Sources */,
 			);

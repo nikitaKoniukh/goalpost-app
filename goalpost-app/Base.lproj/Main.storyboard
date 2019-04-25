@@ -76,7 +76,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R3K-1H-uLA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R3K-1H-uLA">
                                 <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -147,9 +147,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="goalDescriptionLabel" destination="SWc-bt-GQt" id="jxM-iK-Efj"/>
+                                            <outlet property="goalDescriptionLabel" destination="SWc-bt-GQt" id="qeG-ww-B47"/>
+                                            <outlet property="goalProgressLabel" destination="Xph-Ri-Sfa" id="8Cu-wg-WlV"/>
                                             <outlet property="goalTypeLabel" destination="wFu-sF-hl0" id="CAa-DB-XEH"/>
-                                            <outlet property="ogoalProgressLabel" destination="Xph-Ri-Sfa" id="bXa-8H-Lqi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -27,8 +27,6 @@ class GoalsVC: UIViewController  {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.isHidden = false
-
-
     }
 
 
@@ -57,7 +55,6 @@ class GoalsVC: UIViewController  {
 
         sharedUserDefaults?.set("", forKey: SharedUserDefaults.Keys.title)
         sharedUserDefaults?.set("", forKey: SharedUserDefaults.Keys.title)
-        sharedUserDefaults?.set(goals.count, forKey: SharedUserDefaults.Keys.goalsCount)
         tableView.reloadData()
      }
     
@@ -70,6 +67,7 @@ class GoalsVC: UIViewController  {
         } else {
             fetchCoreData()
             tableView.reloadData()
+            sharedUserDefaults?.set(goals.count, forKey: SharedUserDefaults.Keys.goalsCount)
         }
 
     }

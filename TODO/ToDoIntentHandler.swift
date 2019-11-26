@@ -56,8 +56,9 @@ class ToDoIntentHandler : NSObject, TODOIntentHandling {
         sharedUserDefaults?.set(intent.points, forKey: SharedUserDefaults.Keys.points)
 
 
-        let goalsCount = sharedUserDefaults?.string(forKey: SharedUserDefaults.Keys.goalsCount)
-        completion(TODOIntentResponse.success(numberOfGoals: goalsCount ?? ""))
+        let goalsCount = sharedUserDefaults?.integer(forKey: SharedUserDefaults.Keys.goalsCount)
+
+        completion(TODOIntentResponse.success(numberOfGoals: String((goalsCount ?? 0) + 1) ))
     }
 
     //implement this method to get the to-do list from UserDefaults, add to it, save it again to user defaults

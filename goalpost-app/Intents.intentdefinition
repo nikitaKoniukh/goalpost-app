@@ -106,6 +106,99 @@
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
+					<key>INIntentParameterDisplayName</key>
+					<string>Title</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>4pd6Qq</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataCapitalization</key>
+						<string>Sentences</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>title</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>What is your goal?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>LCXLjg</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
+					<key>INIntentParameterTag</key>
+					<integer>1</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
+				</dict>
+				<dict>
+					<key>INIntentParameterCustomDisambiguation</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Term</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>u2GgNr</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>2</integer>
+					<key>INIntentParameterEnumType</key>
+					<string>Term</string>
+					<key>INIntentParameterEnumTypeNamespace</key>
+					<string>ZE9EuQ</string>
+					<key>INIntentParameterName</key>
+					<string>term</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>What ${term}?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>ggeQPg</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>DisambiguationIntroduction</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Select Goal type...</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>IjdU9c</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>DisambiguationSelection</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Just to confirm, you wanted ‘${term}’?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>vWzJee</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Confirmation</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
+					<key>INIntentParameterTag</key>
+					<integer>9</integer>
+					<key>INIntentParameterType</key>
+					<string>Integer</string>
+				</dict>
+				<dict>
 					<key>INIntentParameterCustomDisambiguation</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
@@ -113,7 +206,7 @@
 					<key>INIntentParameterDisplayNameID</key>
 					<string>0Cgl0t</string>
 					<key>INIntentParameterDisplayPriority</key>
-					<integer>1</integer>
+					<integer>3</integer>
 					<key>INIntentParameterMetadata</key>
 					<dict>
 						<key>INIntentParameterMetadataMaximumValue</key>
@@ -131,7 +224,7 @@
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
 							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>How many ?</string>
+							<string>How many points untill complete your goal?</string>
 							<key>INIntentParameterPromptDialogFormatStringID</key>
 							<string>mvtSUt</string>
 							<key>INIntentParameterPromptDialogType</key>
@@ -186,97 +279,6 @@
 						</dict>
 					</array>
 				</dict>
-				<dict>
-					<key>INIntentParameterCustomDisambiguation</key>
-					<true/>
-					<key>INIntentParameterDisplayName</key>
-					<string>Term</string>
-					<key>INIntentParameterDisplayNameID</key>
-					<string>u2GgNr</string>
-					<key>INIntentParameterDisplayPriority</key>
-					<integer>2</integer>
-					<key>INIntentParameterEnumType</key>
-					<string>Term</string>
-					<key>INIntentParameterEnumTypeNamespace</key>
-					<string>ZE9EuQ</string>
-					<key>INIntentParameterName</key>
-					<string>term</string>
-					<key>INIntentParameterPromptDialogs</key>
-					<array>
-						<dict>
-							<key>INIntentParameterPromptDialogCustom</key>
-							<true/>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>What ${term}?</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>ggeQPg</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>Primary</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogCustom</key>
-							<true/>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>DisambiguationIntroduction</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Which one?</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>IjdU9c</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>DisambiguationSelection</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Just to confirm, you wanted ‘${term}’?</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>vWzJee</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>Confirmation</string>
-						</dict>
-					</array>
-					<key>INIntentParameterSupportsResolution</key>
-					<true/>
-					<key>INIntentParameterTag</key>
-					<integer>9</integer>
-					<key>INIntentParameterType</key>
-					<string>Integer</string>
-				</dict>
-				<dict>
-					<key>INIntentParameterDisplayName</key>
-					<string>Title</string>
-					<key>INIntentParameterDisplayNameID</key>
-					<string>4pd6Qq</string>
-					<key>INIntentParameterDisplayPriority</key>
-					<integer>3</integer>
-					<key>INIntentParameterMetadata</key>
-					<dict>
-						<key>INIntentParameterMetadataCapitalization</key>
-						<string>Sentences</string>
-					</dict>
-					<key>INIntentParameterName</key>
-					<string>title</string>
-					<key>INIntentParameterPromptDialogs</key>
-					<array>
-						<dict>
-							<key>INIntentParameterPromptDialogCustom</key>
-							<true/>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>What is your goal?</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>LCXLjg</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>Primary</string>
-						</dict>
-					</array>
-					<key>INIntentParameterSupportsResolution</key>
-					<true/>
-					<key>INIntentParameterTag</key>
-					<integer>1</integer>
-					<key>INIntentParameterType</key>
-					<string>String</string>
-				</dict>
 			</array>
 			<key>INIntentResponse</key>
 			<dict>
@@ -284,7 +286,7 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Okay, added a Goal, now you have ${numberOfGoals} goals!</string>
+						<string>Now you have ${numberOfGoals} goals!</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>NIniDN</string>
 						<key>INIntentResponseCodeName</key>
@@ -329,8 +331,6 @@
 			<string>xqaYT0</string>
 			<key>INIntentType</key>
 			<string>Custom</string>
-			<key>INIntentUserConfirmationRequired</key>
-			<true/>
 			<key>INIntentVerb</key>
 			<string>Add</string>
 		</dict>

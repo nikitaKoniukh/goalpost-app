@@ -30,7 +30,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CA2770F522716609004A0126"
-               BuildableName = "goalpost-app.app"
+               BuildableName = "goalpost.app"
                BlueprintName = "goalpost-app"
                ReferencedContainer = "container:goalpost-app.xcodeproj">
             </BuildableReference>
@@ -73,7 +73,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA2770F522716609004A0126"
-            BuildableName = "goalpost-app.app"
+            BuildableName = "goalpost.app"
             BlueprintName = "goalpost-app"
             ReferencedContainer = "container:goalpost-app.xcodeproj">
          </BuildableReference>
@@ -92,7 +92,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA2770F522716609004A0126"
-            BuildableName = "goalpost-app.app"
+            BuildableName = "goalpost.app"
             BlueprintName = "goalpost-app"
             ReferencedContainer = "container:goalpost-app.xcodeproj">
          </BuildableReference>

@@ -8,33 +8,11 @@
 
 import UIKit
 import CoreData
-import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        donateIntent()
-        guard let _ = (scene as? UIWindowScene) else { return }
-    }
-
-    private func donateIntent(){
-        let intent = TODOIntent()
-        intent.suggestedInvocationPhrase = "Add New To Do"
-        let interaction = INInteraction(intent: intent, response: nil)
-
-        interaction.donate { (error) in
-            if error != nil {
-                if let error = error as NSError? {
-                    print("Interaction donation failed: \(error.description)")
-                } else {
-                    print("Successfully donated interaction")
-                }
-            }
-        }
-    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

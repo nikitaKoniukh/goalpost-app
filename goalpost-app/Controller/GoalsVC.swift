@@ -27,6 +27,26 @@ class GoalsVC: UIViewController  {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.isHidden = false
+        donateInteraction()
+    }
+
+     func donateInteraction() {
+        let intent = TODOIntent()
+        intent.suggestedInvocationPhrase = "Get Balance"
+
+        intent.title = "example"
+        intent.points = 0
+        intent.term = Term.longTerm
+
+        let interaction = INInteraction(intent: intent, response: nil)
+
+        interaction.donate { (err) in
+            if err != nil {
+                print("Interaction donation failed: %@\(err.debugDescription)" )
+            }else {
+                print("Successfully donated interaction")
+            }
+        }
     }
 
 

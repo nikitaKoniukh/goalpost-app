@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA15F6C6238BF4BE00C64580 /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15F6C5238BF4BE00C64580 /* NSCustomPersistentContainer.swift */; };
+		CA15F6C7238BF56000C64580 /* goalpost_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA27710022716609004A0126 /* goalpost_app.xcdatamodeld */; };
+		CA15F6C9238BF6E100C64580 /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15F6C5238BF4BE00C64580 /* NSCustomPersistentContainer.swift */; };
+		CA15F6CB238BF70700C64580 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15F6CA238BF70700C64580 /* SharedUserDefaults.swift */; };
+		CA15F6CC238BF70900C64580 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15F6CA238BF70700C64580 /* SharedUserDefaults.swift */; };
 		CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */; };
 		CA22A0FE2271C21400D4C7E5 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */; };
 		CA22A1002271C76E00D4C7E5 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */; };
@@ -20,9 +25,56 @@
 		CA2771072271660A004A0126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2771052271660A004A0126 /* LaunchScreen.storyboard */; };
 		CA2771152271AFB9004A0126 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2771142271AFB9004A0126 /* GoalCell.swift */; };
 		CA2771172271B856004A0126 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2771162271B856004A0126 /* GoalType.swift */; };
+		CA81C41B238BC43C00065025 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA81C41A238BC43C00065025 /* IntentsUI.framework */; };
+		CA81C41E238BC43C00065025 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81C41D238BC43C00065025 /* IntentViewController.swift */; };
+		CA81C421238BC43C00065025 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA81C41F238BC43C00065025 /* MainInterface.storyboard */; };
+		CA81C425238BC43C00065025 /* TODOUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CA81C418238BC43C00065025 /* TODOUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA81C428238BC43C00065025 /* TODO.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CA81C40F238BC43C00065025 /* TODO.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA81C432238BC46700065025 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA81C430238BC46700065025 /* Intents.intentdefinition */; };
+		CA81C433238BC46700065025 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA81C430238BC46700065025 /* Intents.intentdefinition */; };
+		CA81C445238BD29C00065025 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81C411238BC43C00065025 /* IntentHandler.swift */; };
+		CA81C44E238BD9E600065025 /* ToDoIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81C434238BC54C00065025 /* ToDoIntentHandler.swift */; };
+		CABCE43F238BFD64002E959F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA81C430238BC46700065025 /* Intents.intentdefinition */; };
+		CABCE442238D2800002E959F /* GoalCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCE440238D2800002E959F /* GoalCreatedViewController.swift */; };
+		CABCE443238D2800002E959F /* GoalCreatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABCE441238D2800002E959F /* GoalCreatedViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CA81C423238BC43C00065025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2770EE22716609004A0126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA81C417238BC43C00065025;
+			remoteInfo = TODOUI;
+		};
+		CA81C426238BC43C00065025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2770EE22716609004A0126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA81C40E238BC43C00065025;
+			remoteInfo = TODO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA81C42F238BC43C00065025 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CA81C428238BC43C00065025 /* TODO.appex in Embed App Extensions */,
+				CA81C425238BC43C00065025 /* TODOUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CA15F6C4238BF29E00C64580 /* TODOUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TODOUI.entitlements; sourceTree = "<group>"; };
+		CA15F6C5238BF4BE00C64580 /* NSCustomPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCustomPersistentContainer.swift; sourceTree = "<group>"; };
+		CA15F6CA238BF70700C64580 /* SharedUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaults.swift; sourceTree = "<group>"; };
 		CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -38,6 +90,20 @@
 		CA2771082271660A004A0126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA2771142271AFB9004A0126 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		CA2771162271B856004A0126 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		CA81C40A238BC30C00065025 /* goalpost-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "goalpost-app.entitlements"; sourceTree = "<group>"; };
+		CA81C40F238BC43C00065025 /* TODO.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TODO.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA81C411238BC43C00065025 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		CA81C413238BC43C00065025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA81C418238BC43C00065025 /* TODOUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TODOUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA81C41A238BC43C00065025 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		CA81C41D238BC43C00065025 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		CA81C420238BC43C00065025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CA81C422238BC43C00065025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA81C430238BC46700065025 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		CA81C434238BC54C00065025 /* ToDoIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoIntentHandler.swift; sourceTree = "<group>"; };
+		CA81C449238BD3D500065025 /* TODO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TODO.entitlements; sourceTree = "<group>"; };
+		CABCE440238D2800002E959F /* GoalCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCreatedViewController.swift; sourceTree = "<group>"; };
+		CABCE441238D2800002E959F /* GoalCreatedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalCreatedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +114,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA81C40C238BC43C00065025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA81C415238BC43C00065025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA81C41B238BC43C00065025 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				CA2770F822716609004A0126 /* goalpost-app */,
+				CA81C410238BC43C00065025 /* TODO */,
+				CA81C41C238BC43C00065025 /* TODOUI */,
+				CA81C419238BC43C00065025 /* Frameworks */,
 				CA2770F722716609004A0126 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				CA2770F622716609004A0126 /* goalpost-app.app */,
+				CA81C40F238BC43C00065025 /* TODO.appex */,
+				CA81C418238BC43C00065025 /* TODOUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +156,8 @@
 		CA2770F822716609004A0126 /* goalpost-app */ = {
 			isa = PBXGroup;
 			children = (
+				CA81C430238BC46700065025 /* Intents.intentdefinition */,
+				CA81C40A238BC30C00065025 /* goalpost-app.entitlements */,
 				CA27711122716886004A0126 /* Extensions */,
 				CA2771102271687E004A0126 /* Enum */,
 				CA27710F2271686C004A0126 /* View */,
@@ -80,6 +168,8 @@
 				CA2771052271660A004A0126 /* LaunchScreen.storyboard */,
 				CA2771082271660A004A0126 /* Info.plist */,
 				CA27710022716609004A0126 /* goalpost_app.xcdatamodeld */,
+				CA15F6C5238BF4BE00C64580 /* NSCustomPersistentContainer.swift */,
+				CA15F6CA238BF70700C64580 /* SharedUserDefaults.swift */,
 			);
 			path = "goalpost-app";
 			sourceTree = "<group>";
@@ -120,6 +210,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CA81C410238BC43C00065025 /* TODO */ = {
+			isa = PBXGroup;
+			children = (
+				CA81C449238BD3D500065025 /* TODO.entitlements */,
+				CA81C411238BC43C00065025 /* IntentHandler.swift */,
+				CA81C413238BC43C00065025 /* Info.plist */,
+				CA81C434238BC54C00065025 /* ToDoIntentHandler.swift */,
+			);
+			path = TODO;
+			sourceTree = "<group>";
+		};
+		CA81C419238BC43C00065025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA81C41A238BC43C00065025 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA81C41C238BC43C00065025 /* TODOUI */ = {
+			isa = PBXGroup;
+			children = (
+				CA15F6C4238BF29E00C64580 /* TODOUI.entitlements */,
+				CA81C41D238BC43C00065025 /* IntentViewController.swift */,
+				CA81C41F238BC43C00065025 /* MainInterface.storyboard */,
+				CA81C422238BC43C00065025 /* Info.plist */,
+				CABCE440238D2800002E959F /* GoalCreatedViewController.swift */,
+				CABCE441238D2800002E959F /* GoalCreatedViewController.xib */,
+			);
+			path = TODOUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,15 +252,52 @@
 				CA2770F222716609004A0126 /* Sources */,
 				CA2770F322716609004A0126 /* Frameworks */,
 				CA2770F422716609004A0126 /* Resources */,
+				CA81C42F238BC43C00065025 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CA81C424238BC43C00065025 /* PBXTargetDependency */,
+				CA81C427238BC43C00065025 /* PBXTargetDependency */,
 			);
 			name = "goalpost-app";
 			productName = "goalpost-app";
 			productReference = CA2770F622716609004A0126 /* goalpost-app.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CA81C40E238BC43C00065025 /* TODO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA81C42C238BC43C00065025 /* Build configuration list for PBXNativeTarget "TODO" */;
+			buildPhases = (
+				CA81C40B238BC43C00065025 /* Sources */,
+				CA81C40C238BC43C00065025 /* Frameworks */,
+				CA81C40D238BC43C00065025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TODO;
+			productName = TODO;
+			productReference = CA81C40F238BC43C00065025 /* TODO.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CA81C417238BC43C00065025 /* TODOUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA81C429238BC43C00065025 /* Build configuration list for PBXNativeTarget "TODOUI" */;
+			buildPhases = (
+				CA81C414238BC43C00065025 /* Sources */,
+				CA81C415238BC43C00065025 /* Frameworks */,
+				CA81C416238BC43C00065025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TODOUI;
+			productName = TODOUI;
+			productReference = CA81C418238BC43C00065025 /* TODOUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -146,12 +305,18 @@
 		CA2770EE22716609004A0126 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Nikita Koniukh";
 				TargetAttributes = {
 					CA2770F522716609004A0126 = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					CA81C40E238BC43C00065025 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					CA81C417238BC43C00065025 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -169,6 +334,8 @@
 			projectRoot = "";
 			targets = (
 				CA2770F522716609004A0126 /* goalpost-app */,
+				CA81C40E238BC43C00065025 /* TODO */,
+				CA81C417238BC43C00065025 /* TODOUI */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +351,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA81C40D238BC43C00065025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA81C416238BC43C00065025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CABCE443238D2800002E959F /* GoalCreatedViewController.xib in Resources */,
+				CA81C421238BC43C00065025 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -192,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2771152271AFB9004A0126 /* GoalCell.swift in Sources */,
+				CA15F6CB238BF70700C64580 /* SharedUserDefaults.swift in Sources */,
 				CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */,
 				CA2771172271B856004A0126 /* GoalType.swift in Sources */,
 				CA22A1022271CB0A00D4C7E5 /* UIExt.swift in Sources */,
@@ -199,12 +383,50 @@
 				CA22A1002271C76E00D4C7E5 /* UIViewExt.swift in Sources */,
 				CA2770FA22716609004A0126 /* AppDelegate.swift in Sources */,
 				CA22A0FE2271C21400D4C7E5 /* UIViewControllerExt.swift in Sources */,
+				CA15F6C6238BF4BE00C64580 /* NSCustomPersistentContainer.swift in Sources */,
 				CA22A1042271E31F00D4C7E5 /* FinishGoalVC.swift in Sources */,
+				CABCE43F238BFD64002E959F /* Intents.intentdefinition in Sources */,
 				CA27710222716609004A0126 /* goalpost_app.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA81C40B238BC43C00065025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA81C432238BC46700065025 /* Intents.intentdefinition in Sources */,
+				CA15F6CC238BF70900C64580 /* SharedUserDefaults.swift in Sources */,
+				CA81C445238BD29C00065025 /* IntentHandler.swift in Sources */,
+				CA15F6C9238BF6E100C64580 /* NSCustomPersistentContainer.swift in Sources */,
+				CA15F6C7238BF56000C64580 /* goalpost_app.xcdatamodeld in Sources */,
+				CA81C44E238BD9E600065025 /* ToDoIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA81C414238BC43C00065025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA81C433238BC46700065025 /* Intents.intentdefinition in Sources */,
+				CABCE442238D2800002E959F /* GoalCreatedViewController.swift in Sources */,
+				CA81C41E238BC43C00065025 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA81C424238BC43C00065025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA81C417238BC43C00065025 /* TODOUI */;
+			targetProxy = CA81C423238BC43C00065025 /* PBXContainerItemProxy */;
+		};
+		CA81C427238BC43C00065025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA81C40E238BC43C00065025 /* TODO */;
+			targetProxy = CA81C426238BC43C00065025 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA2770FD22716609004A0126 /* Main.storyboard */ = {
@@ -221,6 +443,14 @@
 				CA2771062271660A004A0126 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CA81C41F238BC43C00065025 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA81C420238BC43C00065025 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,6 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -332,6 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -345,10 +577,13 @@
 		CA27710C2271660A004A0126 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "goalpost-app/goalpost-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N5KK6475ZS;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
 				INFOPLIST_FILE = "goalpost-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,10 +598,13 @@
 		CA27710D2271660A004A0126 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "goalpost-app/goalpost-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N5KK6475ZS;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
 				INFOPLIST_FILE = "goalpost-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,6 +613,90 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CA81C42A238BC43C00065025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TODOUI/TODOUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
+				INFOPLIST_FILE = TODOUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app.TODOUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA81C42B238BC43C00065025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TODOUI/TODOUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
+				INFOPLIST_FILE = TODOUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app.TODOUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA81C42D238BC43C00065025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TODO/TODO.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
+				INFOPLIST_FILE = TODO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app.TODO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA81C42E238BC43C00065025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TODO/TODO.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
+				INFOPLIST_FILE = TODO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app.TODO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -395,6 +717,24 @@
 			buildConfigurations = (
 				CA27710C2271660A004A0126 /* Debug */,
 				CA27710D2271660A004A0126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA81C429238BC43C00065025 /* Build configuration list for PBXNativeTarget "TODOUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA81C42A238BC43C00065025 /* Debug */,
+				CA81C42B238BC43C00065025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA81C42C238BC43C00065025 /* Build configuration list for PBXNativeTarget "TODO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA81C42D238BC43C00065025 /* Debug */,
+				CA81C42E238BC43C00065025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Intents
 
 let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
@@ -18,21 +19,59 @@ class GoalsVC: UIViewController  {
     @IBOutlet weak var undoView: UIView!
     
     var goals = [Goal]()
-    
+    let sharedUserDefaults = UserDefaults(suiteName: SharedUserDefaults.suitname)
+    let intent = TODOIntent()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         tableView.isHidden = false
-       
+
+
     }
+
+
+    func saveFromSiri(){
+
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        let goal = Goal(context: managedContext)
+
+        let title = sharedUserDefaults?.string(forKey: SharedUserDefaults.Keys.title)
+        let term = sharedUserDefaults?.string(forKey: SharedUserDefaults.Keys.term)
+        guard let points = sharedUserDefaults?.integer(forKey: SharedUserDefaults.Keys.points) else { return }
+
+         goal.goalDescription = title
+         goal.goalType = term
+         goal.goalCompletionValue = Int32(points)
+         goal.goalProgress = Int32(0)
+
+         do {
+             try managedContext.save()
+             print("Successfully saved data.")
+             //completion(true)
+         } catch {
+             debugPrint("Could not save: \(error.localizedDescription)")
+            // completion(false)
+         }
+
+        sharedUserDefaults?.set("", forKey: SharedUserDefaults.Keys.title)
+        sharedUserDefaults?.set("", forKey: SharedUserDefaults.Keys.title)
+        sharedUserDefaults?.set(goals.count, forKey: SharedUserDefaults.Keys.goalsCount)
+        tableView.reloadData()
+     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        fetchCoreData()
-        tableView.reloadData()
+
+        let title = sharedUserDefaults?.string(forKey: SharedUserDefaults.Keys.title)
+        if title != "" {
+            saveFromSiri()
+        } else {
+            fetchCoreData()
+            tableView.reloadData()
+        }
+
     }
     
     func fetchCoreData(){
@@ -49,6 +88,7 @@ class GoalsVC: UIViewController  {
     
     @IBAction func addGoalButtonWasPressed(_ sender: Any) {
         guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "CreateGoalVC") else { return }
+        createGoalVC.modalPresentationStyle = .fullScreen
         presentDetail(createGoalVC)
     }
     
@@ -56,8 +96,6 @@ class GoalsVC: UIViewController  {
         //    self.fetchCoreData()
         //    self.tableView.insertRows(at: [indexPath], with: .automatic)
     }
-    
-
     
 }
 
@@ -87,29 +125,26 @@ extension GoalsVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .none
     }
-    
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+
+        let deleteAction = UIContextualAction(style: .destructive, title: "DELETE") { (rowAction, view, success) in
             self.removeGoal(atIndexPath: indexPath)
             self.fetchCoreData()
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
-           // self.undoView.isHidden = false
-            
         }
-        
-        let addAction = UITableViewRowAction(style: .normal, title: "ADD 1") { (rowAction, indexPath) in
+
+        let addAction = UIContextualAction(style: .normal, title: "ADD 1") { (rowAction, view, success) in
             self.setProgress(atIndexPath: indexPath)
             self.tableView.reloadRows(at: [indexPath], with: .automatic)
         }
-        
+
         deleteAction.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         addAction.backgroundColor = #colorLiteral(red: 0.9176470588, green: 0.662745098, blue: 0.2666666667, alpha: 1)
-        return [deleteAction, addAction]
-    }
-    
 
-    
-    
+        let actions = UISwipeActionsConfiguration(actions: [deleteAction, addAction])
+        return actions
+    }
 }
 
 extension GoalsVC{

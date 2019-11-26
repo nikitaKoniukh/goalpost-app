@@ -8,12 +8,33 @@
 
 import UIKit
 import CoreData
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        donateIntent()
+        guard let _ = (scene as? UIWindowScene) else { return }
+    }
+
+    private func donateIntent(){
+        let intent = TODOIntent()
+        intent.suggestedInvocationPhrase = "Add New To Do"
+        let interaction = INInteraction(intent: intent, response: nil)
+
+        interaction.donate { (error) in
+            if error != nil {
+                if let error = error as NSError? {
+                    print("Interaction donation failed: \(error.description)")
+                } else {
+                    print("Successfully donated interaction")
+                }
+            }
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,10 +53,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        showMainScreen()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        showMainScreen()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -54,6 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          error conditions that could cause the creation of the store to fail.
         */
         let container = NSPersistentContainer(name: "goalpost_app")
+        // let container = NSCustomPersistentContainer(name: "YourApp.sqlite")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -89,5 +113,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    func showMainScreen(){
+        let loginVC = UIStoryboard.getMainStoryboard().instantiateViewController(withIdentifier: "goalsVC") as! GoalsVC
+        UIApplication.shared.delegate!.window!!.rootViewController = loginVC
+    }
 }
+
+extension UIStoryboard{
+    //returns storyboard from default bundle if bundle paased as nil.
+    public class func getMainStoryboard() -> UIStoryboard{
+        return UIStoryboard(name: "Main", bundle: nil)
+    }
+}
+
 

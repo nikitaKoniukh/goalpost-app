@@ -18,7 +18,7 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
     //Variables
     var goalDescription: String!
     var goalType: GoalType!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         createGoalButton.bindToKeyboard()

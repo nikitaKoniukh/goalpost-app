@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Intents
 
 enum GoalType: String{
     case longTerm = "Long Term"

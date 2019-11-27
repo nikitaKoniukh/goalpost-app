@@ -305,14 +305,51 @@
 				<key>INIntentResponseCodes</key>
 				<array>
 					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Now you have ${numberOfGoals} goals!</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>P6uVpR</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Now you have ${numberOfGoals} goals!</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>f7xCqM</string>
 						<key>INIntentResponseCodeName</key>
 						<string>success</string>
 						<key>INIntentResponseCodeSuccess</key>
 						<true/>
 					</dict>
 					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Oops, something went wrong!</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>rjztGC</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Oops, something went wrong!</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>sG0inx</string>
 						<key>INIntentResponseCodeName</key>
 						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>1</integer>
+				<key>INIntentResponseOutput</key>
+				<string>numberOfGoals</string>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Number Of Goals</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>VBLigk</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>numberOfGoals</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
 					</dict>
 				</array>
 			</dict>

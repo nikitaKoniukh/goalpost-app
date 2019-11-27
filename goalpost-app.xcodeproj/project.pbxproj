@@ -20,6 +20,8 @@
 		CA1AD63A238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */; };
 		CA1AD63B238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */; };
 		CA1AD63C238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */; };
+		CA1AD63F238EBAC900C3A0E2 /* GoalCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD63D238EBAC900C3A0E2 /* GoalCreatedViewController.swift */; };
+		CA1AD640238EBAC900C3A0E2 /* GoalCreatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1AD63E238EBAC900C3A0E2 /* GoalCreatedViewController.xib */; };
 		CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */; };
 		CA22A0FE2271C21400D4C7E5 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */; };
 		CA22A1002271C76E00D4C7E5 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */; };
@@ -82,6 +84,8 @@
 		CA1AD636238EA6BA00C3A0E2 /* MyGoalUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGoalUI.entitlements; sourceTree = "<group>"; };
 		CA1AD637238EAE1900C3A0E2 /* MyGoalIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalIntentHandler.swift; sourceTree = "<group>"; };
 		CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaults.swift; sourceTree = "<group>"; };
+		CA1AD63D238EBAC900C3A0E2 /* GoalCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCreatedViewController.swift; sourceTree = "<group>"; };
+		CA1AD63E238EBAC900C3A0E2 /* GoalCreatedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalCreatedViewController.xib; sourceTree = "<group>"; };
 		CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				CA1AD61E238E7C9C00C3A0E2 /* IntentViewController.swift */,
 				CA1AD620238E7C9C00C3A0E2 /* MainInterface.storyboard */,
 				CA1AD623238E7C9C00C3A0E2 /* Info.plist */,
+				CA1AD63D238EBAC900C3A0E2 /* GoalCreatedViewController.swift */,
+				CA1AD63E238EBAC900C3A0E2 /* GoalCreatedViewController.xib */,
 			);
 			path = MyGoalUI;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1AD640238EBAC900C3A0E2 /* GoalCreatedViewController.xib in Resources */,
 				CA1AD622238E7C9C00C3A0E2 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1AD63F238EBAC900C3A0E2 /* GoalCreatedViewController.swift in Sources */,
 				CA1AD634238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */,
 				CA1AD63C238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */,
 				CA1AD61F238E7C9C00C3A0E2 /* IntentViewController.swift in Sources */,

@@ -7,7 +7,7 @@
 		<key>MyGoal.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>MyGoalUI.xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,7 +17,25 @@
 		<key>goalpost-app.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CA1AD60F238E7C9B00C3A0E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA1AD618238E7C9C00C3A0E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA2770F522716609004A0126</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

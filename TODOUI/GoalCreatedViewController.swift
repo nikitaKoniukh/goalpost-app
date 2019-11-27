@@ -29,17 +29,19 @@ class GoalCreatedViewController: UIViewController {
         super.viewDidLoad()
         
         goalView.goalTitile.text = intent.title
-        goalView.goalPoints.text = "Points until complete: \(String(describing: intent.points))"
+
+        guard let points = intent.points else { return }
+        goalView.goalPoints.text = "Points until complete: \(String(describing: points))"
 
         switch  intent.term {
         case .unknown:
-            goalView.goalPoints.text = ""
+            goalView.goalType.text = ""
         case .longTerm:
-            goalView.goalPoints.text = "Long Term Goal"
+            goalView.goalType.text = "Long Term Goal"
         case .shortTerm:
-            goalView.goalPoints.text = "Short Term Goal"
+            goalView.goalType.text = "Short Term Goal"
         default:
-            goalView.goalPoints.text = ""
+            goalView.goalType.text = ""
         }
     }
 

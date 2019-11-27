@@ -75,6 +75,7 @@ class GoalsVC: UIViewController  {
 
         sharedUserDefaults?.set("", forKey: SharedUserDefaults.Keys.title)
         sharedUserDefaults?.set("", forKey: SharedUserDefaults.Keys.title)
+
         tableView.reloadData()
      }
     

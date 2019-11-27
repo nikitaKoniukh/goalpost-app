@@ -79,7 +79,7 @@
 		CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		CA22A1012271CB0A00D4C7E5 /* UIExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExt.swift; sourceTree = "<group>"; };
 		CA22A1032271E31F00D4C7E5 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
-		CA2770F622716609004A0126 /* goalpost-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goalpost-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2770F622716609004A0126 /* MyGoals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGoals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2770F922716609004A0126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA2770FB22716609004A0126 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		CA2770FE22716609004A0126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		CA2770F722716609004A0126 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA2770F622716609004A0126 /* goalpost-app.app */,
+				CA2770F622716609004A0126 /* MyGoals.app */,
 				CA1AD610238E7C9B00C3A0E2 /* MyGoal.appex */,
 				CA1AD619238E7C9C00C3A0E2 /* MyGoalUI.appex */,
 			);
@@ -274,7 +274,7 @@
 			);
 			name = "goalpost-app";
 			productName = "goalpost-app";
-			productReference = CA2770F622716609004A0126 /* goalpost-app.app */;
+			productReference = CA2770F622716609004A0126 /* MyGoals.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -637,7 +637,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyGoals;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -658,7 +658,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyGoals;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

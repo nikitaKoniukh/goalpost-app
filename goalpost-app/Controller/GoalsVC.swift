@@ -51,7 +51,6 @@ class GoalsVC: UIViewController  {
 
 
     func saveFromSiri(){
-
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
         let goal = Goal(context: managedContext)
 
@@ -67,15 +66,14 @@ class GoalsVC: UIViewController  {
          do {
              try managedContext.save()
              print("Successfully saved data.")
-             //completion(true)
+            //completion(true)
          } catch {
              debugPrint("Could not save: \(error.localizedDescription)")
-            // completion(false)
+            //completion(false)
          }
 
         sharedUserDefaults?.set("", forKey: SharedUserDefaults.Keys.title)
         sharedUserDefaults?.set("", forKey: SharedUserDefaults.Keys.title)
-
         tableView.reloadData()
      }
     
@@ -90,7 +88,6 @@ class GoalsVC: UIViewController  {
             tableView.reloadData()
             sharedUserDefaults?.set(goals.count, forKey: SharedUserDefaults.Keys.goalsCount)
         }
-
     }
     
     func fetchCoreData(){
@@ -115,10 +112,9 @@ class GoalsVC: UIViewController  {
         //    self.fetchCoreData()
         //    self.tableView.insertRows(at: [indexPath], with: .automatic)
     }
-    
 }
 
-extension GoalsVC: UITableViewDelegate, UITableViewDataSource{
+extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

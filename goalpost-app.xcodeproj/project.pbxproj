@@ -16,6 +16,10 @@
 		CA1AD632238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */; };
 		CA1AD633238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */; };
 		CA1AD634238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */; };
+		CA1AD638238EAE1900C3A0E2 /* MyGoalIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD637238EAE1900C3A0E2 /* MyGoalIntentHandler.swift */; };
+		CA1AD63A238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */; };
+		CA1AD63B238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */; };
+		CA1AD63C238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */; };
 		CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */; };
 		CA22A0FE2271C21400D4C7E5 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */; };
 		CA22A1002271C76E00D4C7E5 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */; };
@@ -76,6 +80,8 @@
 		CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		CA1AD635238EA6A400C3A0E2 /* MyGoal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGoal.entitlements; sourceTree = "<group>"; };
 		CA1AD636238EA6BA00C3A0E2 /* MyGoalUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGoalUI.entitlements; sourceTree = "<group>"; };
+		CA1AD637238EAE1900C3A0E2 /* MyGoalIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalIntentHandler.swift; sourceTree = "<group>"; };
+		CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaults.swift; sourceTree = "<group>"; };
 		CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 				CA1AD635238EA6A400C3A0E2 /* MyGoal.entitlements */,
 				CA1AD612238E7C9B00C3A0E2 /* IntentHandler.swift */,
 				CA1AD614238E7C9B00C3A0E2 /* Info.plist */,
+				CA1AD637238EAE1900C3A0E2 /* MyGoalIntentHandler.swift */,
 			);
 			path = MyGoal;
 			sourceTree = "<group>";
@@ -184,6 +191,7 @@
 				CA2771052271660A004A0126 /* LaunchScreen.storyboard */,
 				CA2771082271660A004A0126 /* Info.plist */,
 				CA27710022716609004A0126 /* goalpost_app.xcdatamodeld */,
+				CA1AD639238EB08A00C3A0E2 /* SharedUserDefaults.swift */,
 			);
 			path = "goalpost-app";
 			sourceTree = "<group>";
@@ -355,6 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1AD638238EAE1900C3A0E2 /* MyGoalIntentHandler.swift in Sources */,
+				CA1AD63B238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */,
 				CA1AD633238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */,
 				CA1AD613238E7C9B00C3A0E2 /* IntentHandler.swift in Sources */,
 			);
@@ -365,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA1AD634238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */,
+				CA1AD63C238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */,
 				CA1AD61F238E7C9C00C3A0E2 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2771152271AFB9004A0126 /* GoalCell.swift in Sources */,
+				CA1AD63A238EB08A00C3A0E2 /* SharedUserDefaults.swift in Sources */,
 				CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */,
 				CA2771172271B856004A0126 /* GoalType.swift in Sources */,
 				CA1AD632238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */,

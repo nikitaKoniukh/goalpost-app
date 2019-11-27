@@ -74,6 +74,8 @@
 		CA1AD621238E7C9C00C3A0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		CA1AD623238E7C9C00C3A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		CA1AD635238EA6A400C3A0E2 /* MyGoal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGoal.entitlements; sourceTree = "<group>"; };
+		CA1AD636238EA6BA00C3A0E2 /* MyGoalUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGoalUI.entitlements; sourceTree = "<group>"; };
 		CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		CA1AD611238E7C9B00C3A0E2 /* MyGoal */ = {
 			isa = PBXGroup;
 			children = (
+				CA1AD635238EA6A400C3A0E2 /* MyGoal.entitlements */,
 				CA1AD612238E7C9B00C3A0E2 /* IntentHandler.swift */,
 				CA1AD614238E7C9B00C3A0E2 /* Info.plist */,
 			);
@@ -137,6 +140,7 @@
 		CA1AD61D238E7C9C00C3A0E2 /* MyGoalUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA1AD636238EA6BA00C3A0E2 /* MyGoalUI.entitlements */,
 				CA1AD61E238E7C9C00C3A0E2 /* IntentViewController.swift */,
 				CA1AD620238E7C9C00C3A0E2 /* MainInterface.storyboard */,
 				CA1AD623238E7C9C00C3A0E2 /* Info.plist */,
@@ -429,6 +433,7 @@
 		CA1AD62B238E7C9C00C3A0E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyGoalUI/MyGoalUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K3Q4658XN;
 				INFOPLIST_FILE = MyGoalUI/Info.plist;
@@ -449,6 +454,7 @@
 		CA1AD62C238E7C9C00C3A0E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyGoalUI/MyGoalUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K3Q4658XN;
 				INFOPLIST_FILE = MyGoalUI/Info.plist;
@@ -469,6 +475,7 @@
 		CA1AD62E238E7C9C00C3A0E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyGoal/MyGoal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K3Q4658XN;
 				INFOPLIST_FILE = MyGoal/Info.plist;
@@ -489,6 +496,7 @@
 		CA1AD62F238E7C9C00C3A0E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyGoal/MyGoal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K3Q4658XN;
 				INFOPLIST_FILE = MyGoal/Info.plist;

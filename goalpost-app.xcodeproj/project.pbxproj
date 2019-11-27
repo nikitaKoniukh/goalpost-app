@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1AD613238E7C9B00C3A0E2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD612238E7C9B00C3A0E2 /* IntentHandler.swift */; };
+		CA1AD61C238E7C9C00C3A0E2 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1AD61B238E7C9C00C3A0E2 /* IntentsUI.framework */; };
+		CA1AD61F238E7C9C00C3A0E2 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD61E238E7C9C00C3A0E2 /* IntentViewController.swift */; };
+		CA1AD622238E7C9C00C3A0E2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1AD620238E7C9C00C3A0E2 /* MainInterface.storyboard */; };
+		CA1AD626238E7C9C00C3A0E2 /* MyGoalUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CA1AD619238E7C9C00C3A0E2 /* MyGoalUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA1AD629238E7C9C00C3A0E2 /* MyGoal.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CA1AD610238E7C9B00C3A0E2 /* MyGoal.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA1AD632238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */; };
+		CA1AD633238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */; };
+		CA1AD634238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */; };
 		CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */; };
 		CA22A0FE2271C21400D4C7E5 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */; };
 		CA22A1002271C76E00D4C7E5 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */; };
@@ -22,7 +31,49 @@
 		CA2771172271B856004A0126 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2771162271B856004A0126 /* GoalType.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CA1AD624238E7C9C00C3A0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2770EE22716609004A0126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA1AD618238E7C9C00C3A0E2;
+			remoteInfo = MyGoalUI;
+		};
+		CA1AD627238E7C9C00C3A0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2770EE22716609004A0126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA1AD60F238E7C9B00C3A0E2;
+			remoteInfo = MyGoal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA1AD630238E7C9C00C3A0E2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CA1AD626238E7C9C00C3A0E2 /* MyGoalUI.appex in Embed App Extensions */,
+				CA1AD629238E7C9C00C3A0E2 /* MyGoal.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CA1AD60B238E7C7E00C3A0E2 /* goalpost-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "goalpost-app.entitlements"; sourceTree = "<group>"; };
+		CA1AD610238E7C9B00C3A0E2 /* MyGoal.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyGoal.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1AD612238E7C9B00C3A0E2 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		CA1AD614238E7C9B00C3A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1AD619238E7C9C00C3A0E2 /* MyGoalUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyGoalUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1AD61B238E7C9C00C3A0E2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		CA1AD61E238E7C9C00C3A0E2 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		CA1AD621238E7C9C00C3A0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CA1AD623238E7C9C00C3A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		CA22A0FB2271C07400D4C7E5 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		CA22A0FD2271C21400D4C7E5 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		CA22A0FF2271C76E00D4C7E5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -41,6 +92,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA1AD60D238E7C9B00C3A0E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1AD616238E7C9C00C3A0E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1AD61C238E7C9C00C3A0E2 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA2770F322716609004A0126 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +117,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA1AD611238E7C9B00C3A0E2 /* MyGoal */ = {
+			isa = PBXGroup;
+			children = (
+				CA1AD612238E7C9B00C3A0E2 /* IntentHandler.swift */,
+				CA1AD614238E7C9B00C3A0E2 /* Info.plist */,
+			);
+			path = MyGoal;
+			sourceTree = "<group>";
+		};
+		CA1AD61A238E7C9C00C3A0E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA1AD61B238E7C9C00C3A0E2 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA1AD61D238E7C9C00C3A0E2 /* MyGoalUI */ = {
+			isa = PBXGroup;
+			children = (
+				CA1AD61E238E7C9C00C3A0E2 /* IntentViewController.swift */,
+				CA1AD620238E7C9C00C3A0E2 /* MainInterface.storyboard */,
+				CA1AD623238E7C9C00C3A0E2 /* Info.plist */,
+			);
+			path = MyGoalUI;
+			sourceTree = "<group>";
+		};
 		CA2770ED22716609004A0126 = {
 			isa = PBXGroup;
 			children = (
+				CA1AD631238E7CB400C3A0E2 /* Intents.intentdefinition */,
 				CA2770F822716609004A0126 /* goalpost-app */,
+				CA1AD611238E7C9B00C3A0E2 /* MyGoal */,
+				CA1AD61D238E7C9C00C3A0E2 /* MyGoalUI */,
+				CA1AD61A238E7C9C00C3A0E2 /* Frameworks */,
 				CA2770F722716609004A0126 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				CA2770F622716609004A0126 /* goalpost-app.app */,
+				CA1AD610238E7C9B00C3A0E2 /* MyGoal.appex */,
+				CA1AD619238E7C9C00C3A0E2 /* MyGoalUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +169,7 @@
 		CA2770F822716609004A0126 /* goalpost-app */ = {
 			isa = PBXGroup;
 			children = (
+				CA1AD60B238E7C7E00C3A0E2 /* goalpost-app.entitlements */,
 				CA27711122716886004A0126 /* Extensions */,
 				CA2771102271687E004A0126 /* Enum */,
 				CA27710F2271686C004A0126 /* View */,
@@ -123,6 +223,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA1AD60F238E7C9B00C3A0E2 /* MyGoal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1AD62D238E7C9C00C3A0E2 /* Build configuration list for PBXNativeTarget "MyGoal" */;
+			buildPhases = (
+				CA1AD60C238E7C9B00C3A0E2 /* Sources */,
+				CA1AD60D238E7C9B00C3A0E2 /* Frameworks */,
+				CA1AD60E238E7C9B00C3A0E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyGoal;
+			productName = MyGoal;
+			productReference = CA1AD610238E7C9B00C3A0E2 /* MyGoal.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CA1AD618238E7C9C00C3A0E2 /* MyGoalUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1AD62A238E7C9C00C3A0E2 /* Build configuration list for PBXNativeTarget "MyGoalUI" */;
+			buildPhases = (
+				CA1AD615238E7C9C00C3A0E2 /* Sources */,
+				CA1AD616238E7C9C00C3A0E2 /* Frameworks */,
+				CA1AD617238E7C9C00C3A0E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyGoalUI;
+			productName = MyGoalUI;
+			productReference = CA1AD619238E7C9C00C3A0E2 /* MyGoalUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CA2770F522716609004A0126 /* goalpost-app */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA27710B2271660A004A0126 /* Build configuration list for PBXNativeTarget "goalpost-app" */;
@@ -130,10 +264,13 @@
 				CA2770F222716609004A0126 /* Sources */,
 				CA2770F322716609004A0126 /* Frameworks */,
 				CA2770F422716609004A0126 /* Resources */,
+				CA1AD630238E7C9C00C3A0E2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CA1AD625238E7C9C00C3A0E2 /* PBXTargetDependency */,
+				CA1AD628238E7C9C00C3A0E2 /* PBXTargetDependency */,
 			);
 			name = "goalpost-app";
 			productName = "goalpost-app";
@@ -146,10 +283,16 @@
 		CA2770EE22716609004A0126 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Nikita Koniukh";
 				TargetAttributes = {
+					CA1AD60F238E7C9B00C3A0E2 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					CA1AD618238E7C9C00C3A0E2 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					CA2770F522716609004A0126 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -169,11 +312,28 @@
 			projectRoot = "";
 			targets = (
 				CA2770F522716609004A0126 /* goalpost-app */,
+				CA1AD60F238E7C9B00C3A0E2 /* MyGoal */,
+				CA1AD618238E7C9C00C3A0E2 /* MyGoalUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA1AD60E238E7C9B00C3A0E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1AD617238E7C9C00C3A0E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1AD622238E7C9C00C3A0E2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA2770F422716609004A0126 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +347,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA1AD60C238E7C9B00C3A0E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1AD633238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */,
+				CA1AD613238E7C9B00C3A0E2 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1AD615238E7C9C00C3A0E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1AD634238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */,
+				CA1AD61F238E7C9C00C3A0E2 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA2770F222716609004A0126 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +372,7 @@
 				CA2771152271AFB9004A0126 /* GoalCell.swift in Sources */,
 				CA22A0FC2271C07400D4C7E5 /* CreateGoalVC.swift in Sources */,
 				CA2771172271B856004A0126 /* GoalType.swift in Sources */,
+				CA1AD632238E7CB400C3A0E2 /* Intents.intentdefinition in Sources */,
 				CA22A1022271CB0A00D4C7E5 /* UIExt.swift in Sources */,
 				CA2770FC22716609004A0126 /* GoalsVC.swift in Sources */,
 				CA22A1002271C76E00D4C7E5 /* UIViewExt.swift in Sources */,
@@ -206,7 +385,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CA1AD625238E7C9C00C3A0E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA1AD618238E7C9C00C3A0E2 /* MyGoalUI */;
+			targetProxy = CA1AD624238E7C9C00C3A0E2 /* PBXContainerItemProxy */;
+		};
+		CA1AD628238E7C9C00C3A0E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA1AD60F238E7C9B00C3A0E2 /* MyGoal */;
+			targetProxy = CA1AD627238E7C9C00C3A0E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		CA1AD620238E7C9C00C3A0E2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA1AD621238E7C9C00C3A0E2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		CA2770FD22716609004A0126 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -226,6 +426,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CA1AD62B238E7C9C00C3A0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
+				INFOPLIST_FILE = MyGoalUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app.MyGoalUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA1AD62C238E7C9C00C3A0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
+				INFOPLIST_FILE = MyGoalUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app.MyGoalUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA1AD62E238E7C9C00C3A0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
+				INFOPLIST_FILE = MyGoal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app.MyGoal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA1AD62F238E7C9C00C3A0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
+				INFOPLIST_FILE = MyGoal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NikitaKoniukh.goalpost-app.MyGoal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CA2771092271660A004A0126 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,10 +625,13 @@
 		CA27710C2271660A004A0126 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "goalpost-app/goalpost-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N5KK6475ZS;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
 				INFOPLIST_FILE = "goalpost-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,10 +646,13 @@
 		CA27710D2271660A004A0126 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "goalpost-app/goalpost-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N5KK6475ZS;
+				DEVELOPMENT_TEAM = 3K3Q4658XN;
 				INFOPLIST_FILE = "goalpost-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +667,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA1AD62A238E7C9C00C3A0E2 /* Build configuration list for PBXNativeTarget "MyGoalUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1AD62B238E7C9C00C3A0E2 /* Debug */,
+				CA1AD62C238E7C9C00C3A0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA1AD62D238E7C9C00C3A0E2 /* Build configuration list for PBXNativeTarget "MyGoal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1AD62E238E7C9C00C3A0E2 /* Debug */,
+				CA1AD62F238E7C9C00C3A0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA2770F122716609004A0126 /* Build configuration list for PBXProject "goalpost-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

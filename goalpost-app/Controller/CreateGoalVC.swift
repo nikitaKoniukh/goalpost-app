@@ -2,7 +2,7 @@
 //  CreateGoalVC.swift
 //  goalpost-app
 //
-//  Created by Nikita Koniukh on 25/04/2019.
+//  Created by Nikita Koniukh on 25/11/2019.
 //  Copyright © 2019 Nikita Koniukh. All rights reserved.
 //
 
@@ -32,6 +32,7 @@ class CreateGoalVC: UIViewController, UITextViewDelegate {
         if goalTextView.text != "" && goalTextView.text != "What is your goal?" {
             guard let finishGoalVC = storyboard?.instantiateViewController(withIdentifier: "FinishGoalVC") as? FinishGoalVC else { return }
             finishGoalVC.initData(description: goalTextView.text!, type: goalType)
+            finishGoalVC.modalPresentationStyle = .fullScreen
             presentingViewController?.presentSecondaryDetail(finishGoalVC)
         }
     }

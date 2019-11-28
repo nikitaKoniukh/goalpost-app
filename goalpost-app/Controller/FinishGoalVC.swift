@@ -2,7 +2,7 @@
 //  FinishGoalVC.swift
 //  goalpost-app
 //
-//  Created by Nikita Koniukh on 25/04/2019.
+//  Created by Nikita Koniukh on 25/11/2019.
 //  Copyright © 2019 Nikita Koniukh. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
     //Variables
     var goalDescription: String!
     var goalType: GoalType!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         createGoalButton.bindToKeyboard()
